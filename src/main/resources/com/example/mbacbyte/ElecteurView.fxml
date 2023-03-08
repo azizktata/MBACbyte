@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="409.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbacbyte.ElecteurViewController">
+   <children>
+      <TableView fx:id="table_listeElectorale" layoutX="315.0" layoutY="14.0" prefHeight="167.0" prefWidth="418.0">
+        <columns>
+          <TableColumn fx:id="col_le_id" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="col_le_nomliste" prefWidth="180.00003051757812" text="NomListe" />
+            <TableColumn fx:id="col_le_score" prefWidth="180.00003051757812" text="Score" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txt_le_id" layoutX="74.0" layoutY="119.0" promptText="ListeElectoraleID" />
+      <Button fx:id="btn_afficher" layoutX="87.0" layoutY="192.0" mnemonicParsing="false" onAction="#OnAfficherClick" prefHeight="26.0" prefWidth="123.0" text="Afficher" />
+      <Button fx:id="btn_back" layoutX="87.0" layoutY="292.0" mnemonicParsing="false" onAction="#OnBackClick" prefHeight="26.0" prefWidth="123.0" text="Back" />
+      <TableView fx:id="tab_cdt_2" layoutX="316.0" layoutY="192.0" prefHeight="200.0" prefWidth="418.0">
+        <columns>
+          <TableColumn fx:id="col_cd_nom" prefWidth="120.0" text="NomCandidat" />
+          <TableColumn fx:id="col_cd_prenom" prefWidth="116.0" text="Prenom" />
+            <TableColumn fx:id="col_cd_position" prefWidth="115.0" text="Position" />
+            <TableColumn fx:id="col_cd_score" prefWidth="66.0" text="Score" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_noter" layoutX="87.0" layoutY="243.0" mnemonicParsing="false" onAction="#OnNoterClick" prefHeight="26.0" prefWidth="123.0" text="Noter" />
+       <Button fx:id="btnViewChart1" layoutX="139.0" layoutY="14.0" mnemonicParsing="false" onAction="#OnViewclick" prefHeight="26.0" prefWidth="150.0" text="Liste electoral chart" />
+      <Button fx:id="btnViewChart11" layoutX="139.0" layoutY="365.0" mnemonicParsing="false" onAction="#OnViewclick2" prefHeight="26.0" prefWidth="150.0" text="Candidat chart" />
+   </children>
+</AnchorPane>

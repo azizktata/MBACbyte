@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="409.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbacbyte.ElecteurView2Controller">
+   <children>
+      <Button fx:id="btn_return" layoutX="87.0" layoutY="312.0" mnemonicParsing="false" onAction="#OnReturnClick" prefHeight="34.0" prefWidth="123.0" text="Return">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <TableView fx:id="table_listcandidats" layoutX="267.0" layoutY="-3.0" prefHeight="208.0" prefWidth="494.0">
+        <columns>
+            <TableColumn fx:id="col_cand_id" prefWidth="46.39996337890625" text="id" />
+            <TableColumn fx:id="col_cand_nom" text="Nom" />
+            <TableColumn fx:id="col_cand_prenom" prefWidth="85.60003662109375" text="Prenom" />
+          <TableColumn fx:id="col_cand_date" prefWidth="102.39999389648438" text="Date" />
+            <TableColumn fx:id="col_cand_position" prefWidth="89.5999755859375" text="Position" />
+            <TableColumn fx:id="col_cand_score" prefWidth="88.80002441406248" text="Score" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txt_note" layoutX="74.0" layoutY="166.0" promptText="Note sur 100" />
+      <TextField fx:id="txt_id_candidat" layoutX="74.0" layoutY="106.0" promptText="Id  candidat" />
+      <Button fx:id="btn_submit_note" layoutX="86.0" layoutY="243.0" mnemonicParsing="false" onAction="#OnSubmitNoteClick" prefHeight="34.0" prefWidth="123.0" text="Submit">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table_listeactivite" layoutX="268.0" layoutY="206.0" prefHeight="201.0" prefWidth="494.0">
+        <columns>
+          <TableColumn fx:id="col_act_candid" prefWidth="94.39996337890625" text="CandidatId" />
+          <TableColumn fx:id="col_act_type" prefWidth="107.99993896484375" text="Type" />
+            <TableColumn fx:id="col_act_duree" prefWidth="120.00003051757812" text="Duree" />
+            <TableColumn fx:id="col_act_typesupport" prefWidth="176.00006103515625" text="TypeSupport" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txt_le_id" layoutX="74.0" layoutY="43.0" promptText="ListeElectoraleID" />
+      <RadioButton fx:id="btn_voir" layoutX="232.0" layoutY="47.0" mnemonicParsing="false" onAction="#OnVoirClick" prefHeight="17.0" prefWidth="14.0" />
+   </children>
+</AnchorPane>
